@@ -1,0 +1,100 @@
+@import './base.css';
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+#app {
+  max-width: 1280px;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  #app {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+nav a[data-v-7a7a37b1] {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 0px solid var(--color-border) !important;
+}
+
+@media (min-width: 1024px){
+nav[data-v-7a7a37b1] {
+    text-align: left;
+    margin-left: 0rem !important;
+    font-size: 12px !important;
+    padding: 0.5rem 0 !important;
+    margin-top: 0rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+}}
+
+nav a[data-v-7a7a37b1] {
+  display: flex !important;
+  padding: 0 1rem !important;
+  border-left: 1px solid var(--color-border);
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: #127CE5 !important;
+  right: 1.125em;
+  z-index: 4;
+}
+.input, .textarea {
+  box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 0%)!important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.input{
+  background-color: #fff0 !important;
+  border-bottom-color: #dbdbdb !important;
+  border-radius: 4px !important;
+  color: #363636 !important;
+  border-color: #00000000;
+}
+
+.select select{
+  background-color: #fff0 !important;
+  border-bottom-color: #dbdbdb !important;
+  border-radius: 4px !important;
+  color: #363636 !important;
+  border-color: #00000000;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
